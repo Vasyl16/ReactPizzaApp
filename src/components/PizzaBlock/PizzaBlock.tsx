@@ -21,6 +21,8 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({
   img,
   sizes,
 }) => {
+  const tempImg =
+    'https://thumbs.dreamstime.com/b/pepperoni-pizza-thinly-sliced-popular-topping-american-style-pizzerias-30402134.jpg';
   const navigation = useNavigate();
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
@@ -54,7 +56,7 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({
         <img
           onClick={onClickImage}
           className="pizza-block__image"
-          src={img}
+          src={tempImg}
           alt="Pizza"
         />
         <h4 className="pizza-block__title">{title}</h4>
