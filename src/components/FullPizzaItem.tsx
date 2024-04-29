@@ -8,11 +8,14 @@ export interface FullPizzaType {
 }
 
 const FullPizzaItem = (pizza: FullPizzaType) => {
+  const tempImg =
+    'https://thumbs.dreamstime.com/b/pepperoni-pizza-thinly-sliced-popular-topping-american-style-pizzerias-30402134.jpg';
+
   return (
     <>
       <div className="container">
         <div className="fullpizza">
-          <img className="fullpizza__image" src={pizza.imageUrl} alt="pizza" />
+          <img className="fullpizza__image" src={tempImg} alt="pizza" />
           <div className="fullpizza__info">
             <h2 className="fullpizza__title">Назва : {pizza.name}</h2>
             <div className="fullpizza__price">Ціна :{pizza.price}₴</div>
