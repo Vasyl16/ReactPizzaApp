@@ -1,7 +1,7 @@
 {
   "name": "pizza-app",
   "version": "0.1.0",
-  "homepage": "https://vasyl16.github.io/ReactCartApp/",
+  "homepage": "https://vasyl16.github.io/ReactPizzaApp/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
